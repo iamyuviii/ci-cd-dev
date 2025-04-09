@@ -24,7 +24,7 @@ jobs:
         context: .
         file: ./docker/Dockerfile.user
         push: true
-        tags: imyuviii/ci-cd_deployment:latest  # Replace with your Docker Hub username and repository
+        tags: imyuviii/ci-cd_deployment:latest  # Replace with your Docker Hub username and repository hello
 
     - name: Verify Pushed Image
       run: docker pull imyuviii/ci-cd_deployment:latest  # Replace with your Docker Hub username and repository
