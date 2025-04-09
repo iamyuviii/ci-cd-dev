@@ -24,7 +24,7 @@ jobs:
         context: .
         file: ./docker/Dockerfile.user
         push: true
-        tags: imyuviii/ci-cd_deployment:latest  # Replace with your Docker Hub username and repository hello
+        tags: imyuviii/ci-cd_deployment:latest  # Replace with your Docker Hub username and repository hh
 
     - name: Verify Pushed Image
       run: docker pull imyuviii/ci-cd_deployment:latest  # Replace with your Docker Hub username and repository
@@ -39,4 +39,7 @@ jobs:
           sudo docker pull 100xdevs/week-18-class:latest
           sudo docker stop web-app || true
           sudo docker rm web-app || true
-          sudo docker run -d --name web-app -p 3005:3000 100xdevs/week-18-class:latest
+          sudo docker run -d --name web-app -p 3005:3000 100xdevs/week-18-class:latest 
+
+
+          
