@@ -27,7 +27,7 @@ jobs:
         tags: 100xdevs/week-18-class:latest  # Replace with your Docker Hub username and repository
 
     - name: Verify Pushed Image
-      run: docker pull 100xdevs/week-18-class:latest  # Replace with your Docker Hub username and repository
+      run: docker pull imyuviii/ci-cd_deployment:latest  # Replace with your Docker Hub username and repository
 
     - name: Deploy to EC2
       uses: appleboy/ssh-action@master
