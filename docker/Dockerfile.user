@@ -13,8 +13,8 @@ COPY packages ./packages
 RUN npm install
 RUN npm install @prisma/client  # Explicitly install @prisma/client
 
-# Generate Prisma client
-RUN npx prisma generate
+# Generate Prisma client with the correct schema path
+RUN npx prisma generate --schema=./packages/db/prisma/schema.prisma
 
 # Build the application
 RUN npm run build
